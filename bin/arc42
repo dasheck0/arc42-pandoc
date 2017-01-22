@@ -12,7 +12,7 @@ subcommand_option_handling :normal
 arguments :strict
 
 desc 'Create an arc42 markdown template'
-arg_name 'Filename of the generated file'
+arg_name 'filename'
 command :create do |c|
 
   c.desc 'The author of the document'
