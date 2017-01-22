@@ -1,5 +1,7 @@
 # Arc42-Pandoc
 
+[![Gem Version](https://badge.fury.io/rb/arc42-pandoc.svg)](https://badge.fury.io/rb/arc42-pandoc)
+
 This is a micro gem for creating arc42 markdown boilerplate code and for converting it to various formats using pandoc.
 
 ## Installation
@@ -60,10 +62,11 @@ of the language the template is suitable for. After that create a file with a me
 * [ ] Add and enforce section header to template files, which can be used to describe it within the list command
 * [ ] Add pandoc integration, to build html, word or pdf from markdown
 * [ ] Add support for detecting templates from a web resource
+* [ ] Write tests
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[dasheck0]/arc42-pandoc. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/dasheck0/arc42-pandoc. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
 
 
 ## License
