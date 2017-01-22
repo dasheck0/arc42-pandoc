@@ -9,7 +9,7 @@ author: <%= author %>
 ## Qualitätsziele {#section13}
 ## Ansprechpartner {#section14}
 ## Wichtige Informationen {#section15}
-### Stash {.unnumbered}
+### Quellcode {.unnumbered}
 # Vorgaben {#section2}
 ## Technische Vorgaben {#section21}
 ## Organisatorische Vorgaben {#section22}
