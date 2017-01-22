@@ -29,14 +29,14 @@ command :create do |c|
 
     markdown_builder = Arc42Pandoc::MarkdownBuilder.new
     markdown_builder.create(args[0], nil, options)
-
   end
 end
 
 desc 'List all known template types by language'
 command :list do |c|
   c.action do |global_options, options, args|
-
+    markdown_builder = Arc42Pandoc::MarkdownBuilder.new
+    markdown_builder.list
   end
 end
 
