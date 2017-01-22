@@ -11,12 +11,13 @@ module Arc42Pandoc
     def create(output, template = nil, options = {})
       options = sanatize_options(options)
 
-      puts options
-
       template = File.join(File.dirname(__FILE__), 'templates', options[:lang].to_s, 'basic.md') if template.nil?
 
       ruyml = Ruyml::Data.new(options)
       ruyml.render_file(template, output)
+    end
+
+    def list
     end
 
     private

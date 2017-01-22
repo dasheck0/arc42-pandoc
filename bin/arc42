@@ -14,8 +14,29 @@ arguments :strict
 desc 'Create an arc42 markdown template'
 arg_name 'Filename of the generated file'
 command :create do |c|
+
+  c.desc 'The author of the document'
+  c.flag [:a, :author]
+
+  c.desc 'The title of the document'
+  c.flag [:t, :title]
+
+  c.desc 'The template type you want for the document'
+  c.flag [:b, :template]
+
   c.action do |global_options, options, args|
-    puts "Works"
+    abort 'You have to provide an output filename' if args.nil? or args.length <= 0
+
+    markdown_builder = Arc42Pandoc::MarkdownBuilder.new
+    markdown_builder.create(args[0], nil, options)
+
+  end
+end
+
+desc 'List all known template types by language'
+command :list do |c|
+  c.action do |global_options, options, args|
+
   end
 end
 
