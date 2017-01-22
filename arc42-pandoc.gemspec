@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'arc42/pandoc/version'
+require 'arc42-pandoc/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "arc42-pandoc"
-  spec.version       = Arc42::Pandoc::VERSION
+  spec.version       = Arc42Pandoc::VERSION
   spec.authors       = ["Stefan Neidig"]
   spec.email         = ["s.neidig@appcom-interactive.de"]
 
