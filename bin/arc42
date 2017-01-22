@@ -23,16 +23,19 @@ command :create do |c|
 
   c.desc 'The template type you want for the document'
   c.flag [:b, :template]
+  c.default_value 'basic'
 
   c.desc 'The language of the document'
-  c.default_value :en
+  c.default_value 'en'
   c.flag [:l, :language]
 
   c.action do |global_options, options, args|
     abort 'You have to provide an output filename' if args.nil? or args.length <= 0
 
     markdown_builder = Arc42Pandoc::MarkdownBuilder.new
-    markdown_builder.create(args[0], nil, options)
+    markdown_builder.create(args[0], options)
+
+    puts "File #{args[0]} generated from template #{options[:language]}/#{options[:template]}"
   end
 end
 
