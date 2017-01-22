@@ -23,7 +23,7 @@ module Arc42Pandoc
       chunks = files.group_by { |file| file.split('/')[-2] }
 
       chunks.each { |lang, templates|
-        puts "Templates available for language '#{lang}': \n  * #{templates.map { |t| t.split('/')[-1] }.join("\n\t* ")}\n\n"
+        puts "Templates available for language '#{lang}': \n  * #{templates.map { |t| t.split('/')[-1] }.join("\n  * ")}\n\n"
       }
     end
 
