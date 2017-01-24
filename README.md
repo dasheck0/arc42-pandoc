@@ -2,7 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/arc42-pandoc.svg)](https://badge.fury.io/rb/arc42-pandoc)
 
-This is a micro gem for creating arc42 markdown boilerplate code and for converting it to various formats using pandoc.
+This is a micro gem for creating arc42 markdown boilerplate code and for converting it to various formats using pandoc. Hence the desired output format must be supported by pandoc.
 
 ## Installation
 
