@@ -21,10 +21,4 @@ All Endpoints are under the api root path on a server `<%= apiroot %>`. For a do
 
 ## Root [/]
 
-<% groups.each { |group| %>
-
-    <%= group %>
-
-<% } %>
-
 # Data Structures
