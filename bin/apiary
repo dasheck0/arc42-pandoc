@@ -16,7 +16,7 @@ arg_name 'filename'
 command :create do |c|
 
   c.desc 'The root path of the api'
-  c.flag [:a, :author]
+  c.flag [:a, :apiroot]
   c.default_value '/api/v1'
 
   c.desc 'The title of the document'

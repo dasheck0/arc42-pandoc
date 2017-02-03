@@ -42,7 +42,7 @@ module Arc42Pandoc
       options = Map[options]
       options[:language] = :en if options[:language].nil?
       options[:title] = '' if options[:title].nil?
-      options[:author] = '' if options[:author].nil?
+      options[:apiroot] = '' if options[:apiroot].nil?
       options[:template] = 'basic' if options[:template].nil?
 
       options
