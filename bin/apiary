@@ -16,15 +16,15 @@ arg_name 'filename'
 command :create do |c|
 
   c.desc 'The root path of the api'
-  c.flag [:a, :apiroot]
   c.default_value '/api/v1'
+  c.flag [:a, :apiroot]
 
   c.desc 'The title of the document'
   c.flag [:t, :title]
 
   c.desc 'The template type you want for the document'
-  c.flag [:b, :template]
   c.default_value 'basic'
+  c.flag [:b, :template]
 
   c.desc 'The language of the document'
   c.default_value 'en'
