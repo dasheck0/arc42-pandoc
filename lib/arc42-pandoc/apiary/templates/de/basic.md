@@ -3,21 +3,22 @@ HOST: http://polls.apiblueprint.org/
 
 # <%= title %>
 
-## Basic information
+## Grundlegende Informationen
 
-All Endpoints are under the api root path on a server `<%= apiroot %>`. For a domain like `http://www.exmaple.com` the api root would be `http://www.example.com<%= apiroot %>`.
+Alle Endpunkte sind unter der API URL `<%= apiroot %>` erreichbar. Wenn die Domain zum Beispiel unter `http://www.exmaple.de` 
+liegen würde, dann wäre die API URL `http://www.example.de<%= apiroot %>`.
 
-## Authentication and authorization
+## Authentifizierung und Autorisierung
 
-## Format and encoding
+## Format and Enkodierung
 
-### Encoding
+### Format
 
-### Formatting
+### Enkodierung
 
-### Headers
+### Header
 
-### Error responses
+### Fehlernachrichten
 
 ## Root [/]
 
